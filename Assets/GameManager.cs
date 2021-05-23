@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,8 +6,8 @@ public class GameManager : MonoBehaviour
 {
     void Start()
     {
-        Cursor.visible = false;                     //¸¶¿ì½º Ä¿¼­°¡ º¸ÀÌÁö ¾Ê°Ô ÇÔ
-        Cursor.lockState = CursorLockMode.Locked;   //¸¶¿ì½º Ä¿¼­¸¦ °íÁ¤½ÃÅ´
+        //Cursor.visible = false;                     //ë§ˆìš°ìŠ¤ ì»¤ì„œê°€ ë³´ì´ì§€ ì•Šê²Œ í•¨
+        //Cursor.lockState = CursorLockMode.Locked;   //ë§ˆìš°ìŠ¤ ì»¤ì„œë¥¼ ê³ ì •ì‹œí‚´
     }
 
     void Update()

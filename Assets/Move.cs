@@ -1,11 +1,11 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Move : MonoBehaviour
 {
     public float speed = 3f;
-
+    public float lookSensitivity;
     Rigidbody rigid;
     private void Start()
     {
@@ -22,6 +22,8 @@ public class Move : MonoBehaviour
     {
         Move4Dir();
         Jump();
+        //transform.Rotate(0f, Input.GetAxis("Mouse X") * speed, 0f, Space.World);
+        //transform.Rotate(Input.GetAxis("Mouse Y") * speed, 0f, 0f);
     }
 
     void Jump()
