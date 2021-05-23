@@ -426,6 +426,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MaleDummy
       objectReference: {fileID: 0}
+    - target: {fileID: 6585372212408022240, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7147605883160851358, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}
       propertyPath: theCamera
       value: 
