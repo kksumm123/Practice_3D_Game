@@ -229,8 +229,8 @@ GameObject:
   - component: {fileID: 1312713499}
   - component: {fileID: 1312713498}
   m_Layer: 0
-  m_Name: Cube
-  m_TagString: Untagged
+  m_Name: Ground
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,10 +365,6 @@ PrefabInstance:
     - target: {fileID: 5703034271549567528, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}
       propertyPath: m_Name
       value: MaleDummy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7147605883160851358, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}
-      propertyPath: forceY
-      value: 5.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}

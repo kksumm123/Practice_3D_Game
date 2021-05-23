@@ -16,6 +16,7 @@ public class Move : MonoBehaviour
     float moveX;
     float moveZ;
     public float forceY = 5.5f;
+    bool isjmping = false;
 
     void Update()
     {
@@ -23,13 +24,16 @@ public class Move : MonoBehaviour
         Jump();
     }
 
-    private void Jump()
+    void Jump()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isjmping == false && Input.GetKeyDown(KeyCode.Space))
+        {
             rigid.AddForce(Vector3.up * forceY, ForceMode.Impulse);
+            isjmping = true;
+        }
     }
 
-    private void Move4Dir()
+    void Move4Dir()
     {
         moveX = 0; moveZ = 0;
         if (Input.GetKey(KeyCode.W))
@@ -45,5 +49,11 @@ public class Move : MonoBehaviour
         pos.x += moveX * speed * Time.deltaTime;
         pos.z += moveZ * speed * Time.deltaTime;
         transform.position = pos;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+            isjmping = false;
     }
 }
