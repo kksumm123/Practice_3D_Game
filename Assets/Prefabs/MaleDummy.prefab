@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  forceY: 300
+  forceY: 5.5
 --- !u!1 &5703034271549567530
 GameObject:
   m_ObjectHideFlags: 0

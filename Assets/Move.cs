@@ -6,16 +6,16 @@ public class Move : MonoBehaviour
 {
     public float speed = 3f;
 
-    Rigidbody rgdbody;
+    Rigidbody rigid;
     private void Start()
     {
-        rgdbody = GetComponent<Rigidbody>();
+        rigid = GetComponent<Rigidbody>();
     }
 
     Vector3 pos;
     float moveX;
     float moveZ;
-    public float forceY = 300;
+    public float forceY = 5.5f;
 
     void Update()
     {
@@ -26,7 +26,7 @@ public class Move : MonoBehaviour
     private void Jump()
     {
         if (Input.GetKeyDown(KeyCode.Space))
-            rgdbody.AddForce(0, forceY, 0);
+            rigid.AddForce(Vector3.up * forceY, ForceMode.Impulse);
     }
 
     private void Move4Dir()

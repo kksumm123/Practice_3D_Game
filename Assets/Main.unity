@@ -366,5 +366,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: MaleDummy
       objectReference: {fileID: 0}
+    - target: {fileID: 7147605883160851358, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}
+      propertyPath: forceY
+      value: 5.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7c6dca9a73c244c9cd1f033a76d9af, type: 3}
