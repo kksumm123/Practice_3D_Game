@@ -20,7 +20,11 @@ public class Move : MonoBehaviour
     void Update()
     {
         Move4Dir();
+        Jump();
+    }
 
+    private void Jump()
+    {
         if (transform.position.y == 0 && Input.GetKeyDown(KeyCode.Space))
             rgdbody.AddForce(0, forceY, 0);
     }
