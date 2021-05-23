@@ -16,7 +16,7 @@ public class Move : MonoBehaviour
     float moveX;
     float moveZ;
     public float forceY = 300;
-    
+
     void Update()
     {
         Move4Dir();
@@ -25,7 +25,7 @@ public class Move : MonoBehaviour
 
     private void Jump()
     {
-        if (transform.position.y == 0 && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
             rgdbody.AddForce(0, forceY, 0);
     }
 
